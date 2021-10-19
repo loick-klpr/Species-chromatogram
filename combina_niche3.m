@@ -1,4 +1,4 @@
-function [results1]=combina_niche3bis(sp_chr,T)
+function [results1]=combina_niche3(sp_chr,T)
 % Needs 'niche_difer_sp.m' and 'niche_difer2.m'
 % INPUTS:
 %
