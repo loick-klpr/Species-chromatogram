@@ -1,4 +1,4 @@
-function y=nanmean4bis(x,k)
+function y=nanmean4(x,k)
 % To use in 'chromato_env16.m'
 % Estimates the mean of the k% of the samples with the highest abundance
 % 
