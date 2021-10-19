@@ -1,4 +1,4 @@
-function y=niche_difer_spbis(sp_chr,T)
+function y=niche_difer_sp(sp_chr,T)
 % To use in 'combina_niche3.m'
 % INPUTS:
 %
