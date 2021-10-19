@@ -1,4 +1,4 @@
-function D=niche_difer2bis(sp_chr1,sp_chr2,T)
+function D=niche_difer2(sp_chr1,sp_chr2,T)
 % To use in 'niche_difer_sp.m'
 % INPUTS:
 %
