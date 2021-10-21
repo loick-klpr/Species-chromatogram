@@ -63,7 +63,7 @@ for j=1:w
         temp=sp_chr(:,i,j);
         
         f1=find(temp==max(temp,[],'omitnan'));                        
-        f2=find(env_st(:,i)>=z1(f1) & env_st(:,i)<z2(f1));            
+        f2=find(env_st(:,i)>=z1(f1(1)) & env_st(:,i)<z2(f1(end)));            
         
         temp_abund=y(f2,j);
         temp_env=z(f2,i);
