@@ -34,7 +34,7 @@ opti_eury_niche2<-function(sp_chr,T,z,y,k){
     for (i in 1:n[2]) {
       temp<-sp_chr[,i,j]
       f1<-which(temp==max(temp,na.rm = TRUE))
-      f2<-which(env_st[,i]>=z1[f1] & env_st[,i]<z2[f1])
+      f2<-which(env_st[,i]>=z1[f1[1]] & env_st[,i]<z2[f1[length(f1)]])
       temp_abund<-y[f2,j]
       temp_env<-z[f2,i]
       p1<-ceiling((k*length(temp_abund))/100)
