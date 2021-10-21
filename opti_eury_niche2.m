@@ -26,8 +26,8 @@ function [deg_eury,mean_deg_eury,opti_val]=opti_eury_niche2(sp_chr,T,z,y,k)
 clear n p w
 [n,p,w]=size(sp_chr);
 
-deg_eury=zeros(p,w);
-opti_val=zeros(p,w);
+deg_eury=nan(p,w);
+opti_val=nan(p,w);
 
 %% estimation of niche breadths
 for j=1:w
@@ -51,7 +51,7 @@ z1=catego(1:end-1,:);
 z2=catego(2:end,:);
 
 [n1,p1]=size(z);
-env_st=zeros(n1,p1)*nan;
+env_st=nan(n1,p1);
 
 for i=1:p1
     env_st(:,i)=(z(:,i)-min(z(:,i)))./(max(z(:,i))-min(z(:,i)));
