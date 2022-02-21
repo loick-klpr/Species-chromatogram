@@ -1,4 +1,4 @@
-function [deg_eury,mean_deg_eury,opti_val]=opti_eury_niche2bis(sp_chr,T,z,y,k)
+function [deg_eury,mean_deg_eury,opti_val]=opti_eury_niche2(sp_chr,T,z,y,k)
 
 % Input :
 % 
