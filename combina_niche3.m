@@ -1,4 +1,4 @@
-function [results1,results2,y2]=combina_niche3bis(sp_chr,T)
+function [results1,results2,y2]=combina_niche3(sp_chr,T)
 % Needs 'niche_difer_sp.m' and 'niche_difer2.m'
 % INPUTS:
 %
@@ -44,7 +44,7 @@ for i=1:p
     [ntemp,~]=size(temp);
     for j=1:ntemp
         cp=cp+1;
-        y(:,:,cp)=niche_difer_spbis(sp_chr(:,temp(j,:),:),T);
+        y(:,:,cp)=niche_difer_sp(sp_chr(:,temp(j,:),:),T);
         point(cp,1)=i;
         point2(cp,1:i)=temp(j,1:i);
         
