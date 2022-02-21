@@ -39,7 +39,7 @@ for i=1:length(z1)
         end
         
         if length(f)>=m
-            yt(i,j)=nanmean4bis(y(f,1),k);
+            yt(i,j)=nanmean4(y(f,1),k);
             nbval(i,j)=length(f);
         end
     end
@@ -48,7 +48,7 @@ end
 chr=zeros(alpha,size(z,2))*nan;
 for i=1:p
     clear temp;
-    temp=moymob1bis(yt(:,i),order_smth);
+    temp=moymob1(yt(:,i),order_smth);
     chr(:,i)=(temp)./(max(temp));
 end
 
