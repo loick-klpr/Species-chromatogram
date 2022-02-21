@@ -1,4 +1,4 @@
-function y=niche_difer_spbis(sp_chr,T)
+function y=niche_difer_sp(sp_chr,T)
 % To use in 'combina_niche3.m'
 % INPUTS:
 %
@@ -15,7 +15,7 @@ function y=niche_difer_spbis(sp_chr,T)
 y=zeros(z,z)+nan;
 for i=1:z
     for j=i+1:z
-        y(i,j)=niche_difer2bis(squeeze(sp_chr(:,:,i)),squeeze(sp_chr(:,:,j)),T);
+        y(i,j)=niche_difer2(squeeze(sp_chr(:,:,i)),squeeze(sp_chr(:,:,j)),T);
     end
 end
 
