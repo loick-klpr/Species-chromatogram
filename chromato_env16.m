@@ -1,4 +1,4 @@
-function [chr2,nbval]=chromato_env16bis(z,y,alpha,m,k,order_smth)
+function [chr2,nbval]=chromato_env16(z,y,alpha,m,k,order_smth)
 % Needs 'nanmean4.m' and 'moymob1.m'
 % INPUTS:
 %
