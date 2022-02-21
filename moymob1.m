@@ -7,9 +7,9 @@
 % OUTPUTS:
 % y: estimation
 %
-% Grégory Beaugrand Février 2004
+% GrÃ©gory Beaugrand FÃ©vrier 2004
 
-function y=moymob1bis(x,m);
+function y=moymob1(x,m);
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 [n,p]=size(x); 
